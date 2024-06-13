@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bug Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-auto bug">
+        <img class="bug" src="/BugTracker.png" height="76px" alt="BUG TRACKER">
+      </div>
+      <div class="head">
+        <h1 class="p-1 head head-1">BUG TRACKER</h1>
+        <p class="head mt-0 p-1">Report all bugs!</p>
+      </div>
+    </div>
+    <form class="mt-4">
+      <!-- ! This is the first row -->
+      <div class="form-row">
+        <label for="bugTitle" class="required-field">Bug Title</label>
+        <div class="input-group">
+          <input type="email" id="bugTitle" class="form-control" />
+        </div>
+      </div>
+      <!-- ! This is the second row -->
+      <div class="form-row">
+        <label for="issueDescription" class="required-field">Issue Description</label>
+        <div class="input-group">
+          <input type="text" id="issueDescription" class="form-control" />
+        </div>
+      </div>
+      <!-- ! This is the second row -->
+      <div class="form-row">
+        <label for="issueDescription" class="required-field">Operating System</label>
+        <div class="input-group">
+          <select name="opeSys" class="form-control">
+            <option value="#">-Select-</option>
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+            <option value="Mac">Mac</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <!-- ! This is the fourth row -->
+      <div class="form-row">
+        <label for="issueDescription" class="required-field">Browser</label>
+        <div class="">
+          <br />
+          <input type="radio" name="browser" value="Chrome" /> Internet Explorer
+          <br />
+          <input type="radio" name="browser" value="Firefox" /> Chrome
+          <br />
+          <input type="radio" name="browser" value="Safari" /> Firefox
+          <br />
+          <input type="radio" name="browser" value="Edge" /> Safari
+          <br />
+          <input type="radio" name="browser" value="Opera" /> Opera
+          <br />
+          <input type="radio" name="browser" value="Other" />
+          Other
+          <br />
+          <input class="form-control" type="text" />
+        </div>
+      </div>
+      <!-- ! This is the fifth row -->
+      <div class="form-row">
+        <label for="issueDescription" class="required-field">Assigned To</label>
+        <div class="input-group">
+          <select name="opeSys" class="form-control">
+            <option value="#">-Select-</option>
+            <option value="John">John</option>
+            <option value="Jane">Jane</option>
+            <option value="Alice ">Alice</option>
+          </select>
+        </div>
+      </div>
+      <!-- ! This is the sixth row -->
+      <div class="form-row">
+        <label class="required-field">Priority</label>
+        <div class="input-group">
+          <select name="opeSys" class="form-control">
+            <option value="">-Select-</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Critical">Critical</option>
+          </select>
+        </div>
+      </div>
+      <!-- ! This is the seventh row -->
+      <div class="form-row ">
+        <label for="issueDescription">Screenshot</label>
+        <div class="form-group">
+          <input type="file" class="form-control-file" id="screenshot" />
+        </div>
+      </div>
+      <!-- ! This is the eighth row -->
+      <div class="form-row">
+        <label for="issueDescription" class="required-field">Status</label>
+        <div class="input-group">
+          <select name="opeSys" class="form-control">
+            <option value="#">-Select-</option>
+            <option value="Open">Open</option>
+            <option value="InProgress">InProgress</option>
+            <option value="Resolved">Resolved</option>
+            <option value="Closed">Closed</option>
+          </select>
+        </div>
+      </div>
+      <!-- ! This is the last button -->
+      <button class="d-flex justify-content-center mx-auto btn1" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
