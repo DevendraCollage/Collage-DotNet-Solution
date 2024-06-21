@@ -1,0 +1,101 @@
+/* This CSS is apply at body */
+body {
+  background-color: turquoise;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  background-color: white;
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.form-row label {
+  flex: 0 0 30%;
+  font-weight: bold;
+}
+
+.form-row .input-group {
+  flex: 0 0 70%;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-bottom-color: #6c757d;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.required-field::before {
+  content: "*";
+  color: red;
+}
+
+.head {
+  /* align heading and paragraph space between them */
+  margin: 0;
+  background-color: rgb(240, 240, 63);
+  width: 89%;
+  margin: 0 auto;
+}
+
+.head-1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.bug {
+  background-color: rgb(240, 240, 63);
+  display: flex;
+}
+
+.btn1 {
+  background-color: turquoise;
+  color: black;
+  padding: 5px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.btnSubmit {
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
+  margin-bottom: 20px; /* adjust the value as needed */
+}
+
+form {
+  padding-bottom: 20px; /* adjust the value as needed */
+}

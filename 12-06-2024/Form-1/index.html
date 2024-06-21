@@ -4,10 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ! Page Title -->
   <title>Bug Tracker</title>
+  <!-- ! External Bootstrap CDN Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- ! External CSS Link -->
   <link rel="stylesheet" href="style.css" />
+  <!-- ! External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -96,8 +105,8 @@
         </div>
       </div>
       <!-- ! This is the seventh row -->
-      <div class="form-row ">
-        <label for="issueDescription">Screenshot</label>
+      <div class="form-row">
+        <label for="screenshot" class="required-field">Screenshot</label>
         <div class="form-group">
           <input type="file" class="form-control-file" id="screenshot" />
         </div>
@@ -116,7 +125,9 @@
         </div>
       </div>
       <!-- ! This is the last button -->
-      <button class="d-flex justify-content-center mx-auto btn1" type="submit">Submit</button>
+      <div class="button-wrapper">
+        <button class="d-flex justify-content-center mx-auto btn1 btnSubmit" type="submit">Submit</button>
+      </div>
     </form>
 </body>
 
